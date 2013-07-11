@@ -17,3 +17,13 @@ Existem os seguintes comandos:
 	/para usuario mensagem (mensagem privada: "usuario" é o nome de um usuário online e "mensagem" é a mensagem a ser enviada)
 
 	/online (retorna o nome dos usuários que estão conectados no momento)
+
+Obs:
+- É necessário ter o pacote "termcolor":
+	https://pypi.python.org/pypi/termcolor
+
+- Para iniciar o servidor:
+	python servidor.py
+
+- Para iniciar o cliente:
+	python cliente ip porta

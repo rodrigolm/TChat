@@ -26,4 +26,4 @@ Obs:
 	python servidor.py
 
 - Para iniciar o cliente:
-	python cliente ip porta
+	python cliente.py ip porta

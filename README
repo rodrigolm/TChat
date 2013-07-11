@@ -1,0 +1,19 @@
+Protótipo de um sistema de comunicação modo texto, utiliza o protocolo TCP/IP, sockets e threads para que mais de um cliente possa se conectar simultaneamente.
+
+O sistema funciona da seguinte forma:
+Existe o módulo servidor e o módulo cliente.
+Ao iniciar o servidor, ele fica "escutando" a espera de conexões. O papel do servidor é realizar a comunicação entre os clientes. Além disso, ele mostra quando um cliente se conecta ou se desconecta, no mesmo instante em que isso acontece.
+Para iniciar o cliente, deve-se informar o IP do servidor e a Porta.
+Ao iniciar um cliente, ele deve informar um nome de usuário e em seguida o cliente se conecta ao servidor (vale ressaltar que um cliente não pode escolher o nome de usuário de outro cliente já conectado).
+Caso um novo cliente se conecte, todos os outros clientes conectados serão informados de que o novo usuário está participando do bate-papo.
+As mensagens entre os clientes, por padrão, são mensagens públicas. Mas é possível também, enviar mensagens privadas, onde um cliente envia a mensagem e o servidor repassa apenas para o usuário destino que foi especificado, ao invés de repassar a todos os usuários conectados.
+Por fim, ao se desconectar, os outros usuários que permaneceram online são informados que o cliente deixou o bate-papo.
+
+O funcionamento do programa é basicamente esse que foi descrito acima.
+Existem os seguintes comandos:
+
+	/sair (o cliente é desconectado)
+
+	/para usuario mensagem (mensagem privada: "usuario" é o nome de um usuário online e "mensagem" é a mensagem a ser enviada)
+
+	/online (retorna o nome dos usuários que estão conectados no momento)
